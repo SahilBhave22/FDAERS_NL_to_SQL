@@ -32,11 +32,11 @@ def get_agent():
     catalog = load_catalog()
     return build_agent(catalog), catalog
 
-st.title("FAERS NLP → SQL")
+st.title("FDAERS NLP → SQL")
 #st.caption("Type a FAERS question → get validated SQL. No database execution.")
 
 q = st.text_area(
-    "Ask a FAERS question",
+    "Ask a FDAERS question",
     placeholder="Top 10 adverse events in males for Keytruda since 2021 reported by health professionals",
     height=140,
 )
@@ -67,5 +67,5 @@ if go:
     # if error:
     #     err_box.error(f"Validator: {error}")
 
-    if attempts:
-        attempt_box.text(f"Number of attempts: {attempts}")
+    #if attempts:
+     #   attempt_box.text(f"Number of attempts: {attempts}")
