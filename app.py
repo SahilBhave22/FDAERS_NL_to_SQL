@@ -32,7 +32,7 @@ def get_agent():
     catalog = load_catalog()
     return build_agent(catalog), catalog
 
-st.title("FDAERS NLP → SQL")
+st.title("FDAERS Natural Language → SQL")
 #st.caption("Type a FAERS question → get validated SQL. No database execution.")
 
 q = st.text_area(
