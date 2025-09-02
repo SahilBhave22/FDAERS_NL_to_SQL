@@ -2,7 +2,7 @@
 # Adds an explicit `run_sql` node that executes the query, then goes to `done`.
 
 import os, re, json
-from functools import lru_cache
+#from functools import lru_cache
 from typing import TypedDict, Optional, Dict, Any, Literal
 
 import pandas as pd
@@ -75,7 +75,7 @@ class AgentState(TypedDict):
 # ----------------------------
 # DB helpers
 # ----------------------------
-@lru_cache(maxsize=4)
+#@lru_cache(maxsize=4)
 def get_engine_cached(db_url: str):
     return create_engine(db_url, pool_pre_ping=True)
 
