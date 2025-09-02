@@ -6,3 +6,5 @@ langgraph>=0.2
 sqlglot>=24.0
 tiktoken>=0.7
 psycopg2
+sqlalchemy
+functools
